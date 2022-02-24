@@ -18,7 +18,7 @@ html{
 body{
     height: 150vh;
     font-family: 'Roboto Serif', sans-serif;
-    padding:2% 5%;
+    padding:2% 0;
     /* font-family: 'Roboto Slab', serif; */
 }
 .navbar-section-container{
@@ -28,6 +28,10 @@ body{
     align-items: center;
     flex-flow: wrap row;
     gap:20px;
+    padding:0 5%;
+}
+main , section {
+    padding:0 5%;
 }
 .navbar-section-container .navbar-links ul{
     display:flex;
@@ -237,19 +241,19 @@ section {
 }
 .section-item-1 i {
     display:block;
-    font-size:2.6rem;
+    font-size:2.8rem;
     color:#4E13D1;
     cursor: pointer;
 }
 .section-item-2 i {
     display:block;
-    font-size:2.6rem;
+    font-size:2.8rem;
     color:#4E13D1;
     cursor: pointer;
 }
 .section-item-3 i {
     display:block;
-    font-size:2.6rem;
+    font-size:2.8rem;
     color:#4E13D1;
     cursor: pointer;
 }
@@ -537,15 +541,123 @@ user-section-3 start */
 }
 /* user section 3 end */
 
-.footer-links-item{
-    margin-top:8%;
+.footer-link-container{
+    margin-top:16%;
     position: relative;
-    top:30%;
-    height:300px;
-    background-color:#ccc;
+    top:22%;
+    width:100%;
+    padding:0 2%;
+    height:350px;
+    background-color:rgb(248, 248, 248);
     display:flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap:35px;
-    flex-flow:row wrap;
+    gap:20px;
+    flex-flow: row wrap;
+    z-index:10;
+    user-select: contain;
 }
+.footer-title-1 div a{
+    text-decoration: none;
+    display:block;
+    font-size:1.4rem;
+    color:#000;
+    font-weight: 700;
+}
+.footer-title-1  p{
+    font-size:1rem;
+    letter-spacing:.5px;
+    color:rgb(58, 58, 58);
+    font-weight: 700;
+    padding:10px 0;
+    user-select:none;
+    word-wrap: wrap;
+    word-spacing: 1px;
+}
+.footer-title-1  a{
+    text-decoration: none;
+    font-size:1rem;
+    letter-spacing:.5px;
+    color:rgb(58, 58, 58);
+    font-weight: 700;
+    user-select: none;
+}
+
+.footer-title-2 div a{
+    text-decoration: none;
+    display:block;
+    font-size:1.4rem;
+    color:#000;
+    font-weight: 700;
+}
+.footer-title-2  a{
+    text-decoration: none;
+    font-size:1rem;
+    letter-spacing:.5px;
+    color:rgb(58, 58, 58);
+    font-weight: 700;
+    padding:6px 0;
+}
+.footer-title-3 div a{
+    text-decoration: none;
+    display:block;
+    font-size:1.4rem;
+    color:#000;
+    font-weight: 700;
+}
+.footer-title-3  a{
+    text-decoration: none;
+    font-size:1rem;
+    letter-spacing:.5px;
+    color:rgb(58, 58, 58);
+    font-weight: 700;
+    padding:6px 0;
+}
+.footer-title-4 div a{
+    text-decoration: none;
+    display:block;
+    font-size:1.4rem;
+    color:#000;
+    font-weight: 700;
+}
+.footer-title-4  a{
+    text-decoration: none;
+    font-size:1rem;
+    letter-spacing:.5px;
+    color:rgb(58, 58, 58);
+    font-weight: 700;
+    padding:6px 0;
+}
+
+.footer-title-5 div a{
+    text-decoration: none;
+    display:block;
+    font-size:1.4rem;
+    color:#000;
+    font-weight: 700;
+}
+.footer-title-5  a{
+    text-decoration: none;
+    font-size:1rem;
+    letter-spacing:.5px;
+    color:rgb(58, 58, 58);
+    font-weight: 700;
+    padding:6px 0;
+}
+.footer-title-2 a {
+    display: block;
+    text-decoration: none;
+}
+.footer-title-3 a {
+    display: block;
+    text-decoration: none;
+}
+.footer-title-4 a {
+    display: block;
+    text-decoration: none;
+}
+.footer-title-5 a {
+    display: block;
+    text-decoration: none;
+}
+
