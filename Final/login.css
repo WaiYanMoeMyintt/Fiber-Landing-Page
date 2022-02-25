@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@100&family=Roboto+Slab:wght@200&display=swap');
+
+:root{
+    ---primary-color:#4E13D1;
+}
+html{
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+body{
+    height: 150vh;
+    font-family: 'Roboto Serif', sans-serif;
+    padding:2% 0;
+    /* font-family: 'Roboto Slab', serif; */
+}
+section{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    align-content: center;
+    flex-wrap: row wrap;
+    gap:25px;
+    flex-basis: 50%;
+    flex-grow:2;
+
+}
+.template-section{
+    width:100%;
+    background-color:var(---primary-color);
+}
+
+a img input button {
+    display:block;
+}
+.template-section a img {
+    display: inline-block;
+    width:500px;
+    height:auto;
+}
