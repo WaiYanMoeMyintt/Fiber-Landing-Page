@@ -16,32 +16,216 @@ html{
     text-decoration: none;
 }
 body{
-    height: 150vh;
+    height: 120vh;
     font-family: 'Roboto Serif', sans-serif;
     padding:2% 0;
     /* font-family: 'Roboto Slab', serif; */
 }
-section{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    align-content: center;
-    flex-wrap: row wrap;
-    gap:25px;
-    flex-basis: 50%;
-    flex-grow:2;
-
-}
-.template-section{
-    width:100%;
-    background-color:var(---primary-color);
-}
-
-a img input button {
+a,img,input,button {
     display:block;
 }
+.fiber-title a {
+    display:block;
+    font-size:1.8rem;
+    color:#000;
+    font-weight: 700;
+    padding:0 5%;
+}
+section {
+    display:flex;
+    justify-content:center;
+    align-content: center;
+    align-items:center;
+    column-gap:30px;
+    flex-wrap:wrap;
+    flex-direction: row;
+    flex-basis:450px;
+    flex-grow:2;
+    padding:2% 5%;
+    margin:4% 0;
+}
+section .login-section h3{
+    
+     font-size:2.1rem;
+     color:#333;
+     padding:0 20px;
+     font-weight: 800;
+     margin:10px 0;
+     font-family: 'Roboto Slab', serif;
+     position: relative;
+     bottom: 25px;
+     right: 20px;
+}
+.login-section{
+    background-color:rgb(255, 254, 254);
+    flex-grow: 2;
+    flex-basis:350px;
+    height:600px;
+}
+.login-section form {
+    position: relative;
+    top:10px;
+}
+.login-section form  label {
+    font-size:1rem !important;
+    color:#000;
+    font-weight: 800;
+    margin:10px 0;
+    font-family: 'Roboto Slab', serif;
+}
+.login-section form input {
+    width:80%;
+    padding:15px 55px;
+    user-select: none;
+    border-radius:4px;
+    outline:1px solid rgb(172, 172, 172);
+    border:none;
+    margin:12px 0;
+    position: relative;
+    top:0;
+    transition:transform .3s ease-in-out;
+}
+.login-section form input::placeholder {
+    font-size:1rem;
+    color:rgb(155, 155, 155);
+    font-family: 600;
+    letter-spacing:.6px;
+    width:100%;
+    position: absolute;
+    left:20px;
+}
+.login-section form input:hover {
+    transform: translateY(-1px);
+    outline:1px solid rgb(128, 128, 128);
+}
+.login-section form input[type="text"]
+{
+    font-size:1rem;
+}
+.login-section form input[type="email"]
+{
+    font-size:1rem;
+}
+.login-section form input[type="password"]
+{
+    font-size:1rem;
+}
+.login-section form input:focus{
+    display:block;
+    outline:1px solid #333;
+    border:none;
+}
+.login-section .checkbox {
+    margin-top:40px;
+    display:inline-block;
+}
+.login-section span {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size:1rem;
+    color:#000;
+    word-spacing: 1px;
+    letter-spacing: .5px;
+    word-break: wrap;
+    padding:0 4px;
+}
+.login-section .terms {
+    color:#4E13D1;
+    text-decoration: underline;
+    font-size:1rem;
+    font-family: 'Roboto Slab', serif;
+    display:inline-block;
+    font-weight: 700;
+    padding:0 2px;
+    transition: color 1s 0 ease-in;
+}
+.login-section .terms:hover {
+    color:#5209f0;
+}
+.login-section .terms:active{
+    color:#6d32eb;
+}
+.login-section .login-link {
+    position: relative;
+    top:20px;
+    padding:10px 0;
+}
+.login-section .login-link button {
+    width:80%;
+    padding:13px 55px;
+    user-select: none;
+    border-radius:4px;
+    border:none;
+    margin:10px 0;
+    background-color:#4E13D1;
+    font-size:1.2rem;
+    color:#fff;
+    letter-spacing: .4px;
+    cursor: pointer;
+}
+.login-section .account {
+    padding:20px 0;
+    margin:0 40px;
+}
+.login-section .account p {
+    display: inline;
+    font-size:1rem;
+    font-weight: 700;
+    font-family: 'Roboto Slab', serif;
+    color:#333;
+}
+.login-section .account a {
+    display:inline-block;
+    font-size:1rem;
+    font-weight: 700;
+    font-family: 'Roboto Slab', serif;
+    color:#4E13D1;
+    padding:0 5px;
+    cursor: pointer;
+}
+.login-section .account a:hover{
+    color:#6526ec;
+}
+.login-section .account a:active{
+    color:#5710f0;
+}
+.template-section{
+    background-color:#4E13D1;
+    flex-basis:60%;
+    height:600px;
+}
 .template-section a img {
-    display: inline-block;
-    width:500px;
+    display:inline-block;
+    width:450px;
     height:auto;
+    transform:translate(160px,50px);
+    border-radius: 6px;
+    transition: opacity .3s ease-in-out;
+}
+.template-section a img:hover {
+    opacity: .8;
+}
+.template-section div {
+    position: relative;
+    top:10%;
+    text-align: center;
+    user-select: none;
+}
+.template-section h3 {
+    font-size:2rem;
+    color:#fff;
+    font-family: 800;
+    padding:10px 0;
+    letter-spacing:.5px;
+    font-family: 'Roboto Slab', serif;
+}
+.template-section p {
+    line-height: 1.8;
+    letter-spacing:.5px;
+    word-spacing:1px;
+    word-break: break;
+    color:rgb(236, 236, 236);
+    font-family: 'Roboto Slab', serif;
+    font-size:1rem;
+    
 }
