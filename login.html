@@ -6,65 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fiber Landing Page</title>
     <link rel="stylesheet" href="Final/login.css">
-    <link rel="stylesheet" href="Final/style.css">
     <link rel="stylesheet" href="HoverLibaray/hover.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
 </head>
 <body> 
-
-         <!--Navbar Start-->
-         <nav>
-            <div class="navbar-section-container">
-                <div class="navbar-header">
-                    <a href="#" class="navbar-brand nav-header">Fiber</a>
-                </div>
-                <div class="navbar-links">
-                    <ul>
-                        <a href="#">
-                            <li>Community</li>
-                        </a>
-                        <a href="#">
-                            <li>Pricing</li>
-                        </a>
-                        <a href="#">
-                           <li>Features</li>
-                        </a>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-             <!--Navbar ENd-->
-
+    <div class="fiber-title">
+        <a href="index.html">Fiber</a>
+    </div>
      <section>
          <div class="login-section">
-              <h4>Create your Fiber Account</h4>
+              <h3>Create your Fiber Account</h3>
               <form action="D:\Vs code\HTML,CSS UI UX Projects\Dev Challenges\Fiber Landing Page\Fiber Starter Files\login.html"
                method="get">
                   <label for="Name">Your Name</label>
                   <input required autofocus type="text" placeholder="John Dees">
 
                   <label for="Name">E-mail</label>
-                  <input required autofocus  type="text" placeholder="john@example.com">
+                  <input required autofocus  type="email" placeholder="john@example.com">
 
-                  <label for="Name">Your Name</label>
-                  <input required autofocus  type="text" placeholder="At least 8 characters">
+                  <label for="Name">Password</label>
+                  <input required autofocus  type="password" placeholder="At least 8 characters">
               </form>
-              <p>By creating an account on Fiber, you agree to the <br><a href="index.html">Terms & Conditions</a></p>
+
+              <input class = "checkbox" required type="checkbox">
+              <span>By creating an account on Fiber, you agree <br> to the </span>
+              <a class = "terms" target="_blank" href="index.html">Terms & Conditions</a>
+
+     
               <div class="login-link">
-                  <button type = "submit" autocomplete="submit" >Create Fiber Account</button>
+                  <button class = "hvr-rectangle-out" type = "submit" autocomplete="submit" >Create Fiber Account</button>
               </div>
-              <a href=""></a>
-              <p>Already have an account?  <a href="#">Sign In</a> </p>
+
+              <div class = "account">
+                <p>Already have an account?</p>
+                <a href="#">Sign In</a> 
+              </div>
          </div>
          <div class="template-section">
              <a href="#"><img src="Assets/Sign Up Image.png" alt="signup"></a>
-             <h3 class="text-center text-light">Unparalleled Templates</h3>
-             <p>Crafted by a team of professionals designers, our <br> templates are 
-               eunparalleled in the market.
-            </p>
+             
+             <div>
+                <h3 class="text-center text-light">Unparalleled Templates</h3>
+                <p>Crafted by a team of professionals designers, our <br> templates are 
+                  eunparalleled in the market.
+               </p>
+             </div>
          </div>
      </section>
-    
+
 </body>
 </html>
